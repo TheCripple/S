@@ -198,7 +198,7 @@ http://www.exploit-monday.com
     $Proxy = $False,
     
     [Switch]
-    $Force = $True
+    $Force = $False
 )
 
     Set-StrictMode -Version 2.0
