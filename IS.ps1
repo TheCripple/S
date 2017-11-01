@@ -166,7 +166,7 @@ http://www.exploit-monday.com
                   'windows/meterpreter/reverse_https',
                   IgnoreCase = $True )]
     [String]
-    $Payload = 'windows/meterpreter/reverse_http',
+    $Payload = 'windows/meterpreter/reverse_https',
     
     [Parameter( ParameterSetName = 'ListPayloads' )]
     [Switch]
@@ -180,7 +180,7 @@ http://www.exploit-monday.com
     [Parameter( ParameterSetName = 'Metasploit' )]
     [ValidateRange( 1,65535 )]
     [Int]
-    $Lport = 80,
+    $Lport = 443,
     
     [Parameter( ParameterSetName = 'Metasploit' )]
     [ValidateNotNull()]
@@ -198,7 +198,7 @@ http://www.exploit-monday.com
     $Proxy = $False,
     
     [Switch]
-    $Force = $False
+    $Force = $True
 )
 
     Set-StrictMode -Version 2.0
