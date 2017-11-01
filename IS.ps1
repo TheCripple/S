@@ -166,7 +166,7 @@ http://www.exploit-monday.com
                   'windows/meterpreter/reverse_https',
                   IgnoreCase = $True )]
     [String]
-    $Payload = 'windows/meterpreter/reverse_https',
+    $Payload = 'windows/meterpreter/reverse_http',
     
     [Parameter( ParameterSetName = 'ListPayloads' )]
     [Switch]
@@ -198,7 +198,7 @@ http://www.exploit-monday.com
     $Proxy = $False,
     
     [Switch]
-    $Force = $False
+    $Force = $True
 )
 
     Set-StrictMode -Version 2.0
